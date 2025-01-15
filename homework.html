@@ -6,66 +6,79 @@
     <meta name="keywords" content="Vlad, cv, resume">
     <meta name="description" content="Vladyslav's resume">
     <title>Vladyslav's resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="Assets/Images/My photo.jpg" width="150" alt="Vladyslav">
-    <h1>Vladyslav</h1>
-    <p>My name is <strong>Vladyslav</strong>. I am student of Result University, where I learn HTML course</p>
-    <p>I like <em>programming, do math problems, studying</em></p>
+    <div class="container">
+        <div class="info">
+            <img src="Assets/Images/My photo.jpg" alt="Vladyslav" class="avatar">            
+            <div class="info-text card">
+                <h1>Vladyslav</h1>
+                <p>My name is <strong>Vladyslav</strong>. I am student of Result University, where I learn HTML course</p>
+                <p>I like <em>programming, do math problems, studying</em></p>
 
-    <h2><strong>Social networks list</strong></h2>
-    <a href="https://www.instagram.com/vladosind/" target="_blank">Instagram</a>
+                <h2><strong>Social networks list</strong></h2>
+                <a href="https://www.instagram.com/vladosind/" target="_blank">Instagram</a>
+            </div>
+        </div>
+        <div class="card">
+            <h2>My hobbies</h2>
 
-    <h2>My hobbies</h2>
-
-    <ol>
-        <li>Programming</li>
-        <li>Math</li>
-    </ol>
-
-    <h2>Job experience</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Job name</th>
-                <th>Position</th>
-                <th>Period</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>School</td>
-                <td>Student</td>
-                <td>2011-2022</td>
-            </tr>
-            <tr>
-                <td>Khmelnytsky National University</td>
-                <td>Student</td>
-                <td>2022-Now</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Write to me</h2>
-    <form action="/">
-        <div>
-            <label for="name">Your name</label>
-            <input type = "text" id="name" placeholder="Enter your name">
+            <ol class="list">
+                <li>Programming</li>
+                <li>Math</li>
+            </ol>
         </div>
 
-        <div>
-            <label for="email">Your email</label>
-            <input type = "email" id="email" placeholder="Enter your email">
+        <div class="card">
+            <h2>Job experience</h2>
+
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Job name</th>
+                        <th>Position</th>
+                        <th>Period</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>School</td>
+                        <td>Student</td>
+                        <td>2011-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Khmelnytsky National University</td>
+                        <td>Student</td>
+                        <td>2022-Now</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <div>
-            <label for="message">Your message</label>
-            <br>
-            <textarea id="message" cols="30" rows="6" placeholder="Enter your message"></textarea>
-        </div>
+        <div class="card">
+            
+            <form class="form">
+                <h2>Write to me</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your name</label>
+                        <input type = "text" id="name" placeholder="Enter your name">
+                    </div>
 
-        <button type="submit">Send</button>
-    </form>
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+                        <input type = "email" id="email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your message</label>
+                    <textarea id="message" cols="30" rows="6" placeholder="Enter your message"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
